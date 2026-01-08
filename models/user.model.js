@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
+//added id
 
 userSchema.pre('save', async function () {
   if (this.isNew) {
